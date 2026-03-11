@@ -1,3 +1,5 @@
 title: OpenClaw
 description: OpenClaw 技术文档 - 多通道 AI 网关
 theme: jekyll-theme-minimal
+include:
+  - _pages
