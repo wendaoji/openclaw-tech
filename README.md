@@ -90,6 +90,7 @@ openclaw agent --message "你好"
 
 | 文档 | 说明 |
 |------|------|
+| [完整文档](docs/README.md) | 完整技术文档 |
 | [系统架构](docs/architecture.md) | 技术架构总览 |
 | [Gateway](docs/gateway-module.md) | 网关模块详解 |
 | [Channels](docs/channels-module.md) | 通道模块详解 |
@@ -101,7 +102,7 @@ openclaw agent --message "你好"
 | [Media](docs/media-module.md) | 媒体处理详解 |
 | [Web TUI](docs/web-tui-module.md) | 用户界面详解 |
 
-完整文档：[https://wendaoji.github.io/openclaw-tech/](https://wendaoji.github.io/openclaw-tech/)
+或访问在线文档：[https://wendaoji.github.io/openclaw-tech/](https://wendaoji.github.io/openclaw-tech/)
 
 ---
 
