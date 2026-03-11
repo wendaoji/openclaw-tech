@@ -1,0 +1,74 @@
+$if(title)$
+\documentclass[12pt,a4paper]{article}
+$else$
+\documentclass[12pt,a4paper]{article}
+$endif$
+
+% Required packages
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+}
+
+% Page geometry
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=2cm,
+  right=2cm,
+  top=2cm,
+  bottom=2cm
+}
+
+% Headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{OpenClaw 技术文档}
+
+% Listings for code blocks
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstdefinestyle{mystyle}{
+  basicstyle=\fontfamily{DejaVuSansMono}\selectfont,
+  frame=single,
+  backgroundcolor=\color[gray]{0.95},
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true,
+}
+
+\lstset{style=mystyle}
+
+% Pandoc tightlist
+\def\tightlist{}
+
+\begin{document}
+
+$if(title)$
+\title{$title$}
+$if(author)$
+\author{$author$}
+$endif$
+$if(date)$
+\date{$date$}
+$endif$
+\maketitle
+$endif$
+
+$if(toc)$
+\tableofcontents
+$endif$
+
+$body$
+
+\end{document}
