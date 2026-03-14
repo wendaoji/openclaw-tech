@@ -104,6 +104,22 @@ openclaw agent --message "你好"
 
 或访问在线文档：[https://wendaoji.github.io/openclaw-tech/](https://wendaoji.github.io/openclaw-tech/)
 
+## Docsify 文档站点
+
+项目已接入 Docsify，文档入口在 `docs/index.html`。
+
+本地预览：
+
+```bash
+npx docsify-cli serve docs
+```
+
+默认访问地址：
+
+```text
+http://localhost:3000
+```
+
 ---
 
 ## License
